@@ -1,0 +1,40 @@
+{
+  "name": "magictree",
+  "version": "0.1.0",
+  "main": "./src/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abcrun/magicTree.git"
+  },
+  "author": "hrdesign@163.com",
+  "license": "MIT",
+  "scripts": {
+    "prepare": "husky install",
+    "eslint": "eslint --fix",
+    "prettier": "prettier --write"
+  },
+  "lint-staged": {
+    "*.{js}": [
+      "prettier",
+      "eslint",
+      "git add"
+    ]
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "webpack": "^5.0.0",
+    "husky": "^7.0.4",
+    "lint-staged": "^12.3.7",
+    "prettier": "^2.3.2",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^3.4.1",
+    "@commitlint/cli": "^13.1.0",
+    "@commitlint/config-conventional": "^13.1.0",
+    "eslint-config-airbnb-base": "14.2.1",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint": "^7.2.0"
+  },
+  "engines": {
+    "node": "^12.0.0 || >= 14.0.0"
+  }
+}
